@@ -1,0 +1,6 @@
+<div class="aspect-ratio-image-placeholder" {{bind-attr style=fillStyle}}></div>
+{{#if template}}
+  {{yield}}
+{{else}}
+  <img {{bind-attr src=src}}>
+{{/if}}

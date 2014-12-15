@@ -1,0 +1,12 @@
+.aspect-ratio-image {
+  max-width: 100%;
+  position: relative;
+}
+
+.aspect-ratio-image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
