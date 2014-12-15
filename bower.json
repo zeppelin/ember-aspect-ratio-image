@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-aspect-ratio-image",
+  "name": "ember-aspect-ratio-image",
   "dependencies": {
     "handlebars": "2.0.0",
     "jquery": "^1.11.1",
