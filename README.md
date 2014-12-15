@@ -7,7 +7,7 @@ Similar to how responsive images are handled on [Medium](https://medium.com/@jon
 ## Installation
 
 ```
-$ npm install ember-aspect-ratio-image
+$ npm install ember-aspect-ratio-image --save-dev
 ```
 
 ## Usage
