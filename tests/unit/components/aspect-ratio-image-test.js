@@ -6,22 +6,21 @@ import {
 var run = Ember.run;
 
 moduleForComponent('aspect-ratio-image', 'AspectRatioImageComponent', {
-  // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  unit: true
 });
 
-test('it calculates the correct aspect ratio for a given width/height', function() {
-  var getPaddingBottom = function() {
+test('it calculates the correct aspect ratio for a given width/height', function(assert) {
+  const getPaddingBottom = ()=> {
     var element = this.$().find('.aspect-ratio-image-placeholder')[0];
     return element.style.paddingBottom;
-  }.bind(this);
+  };
 
-  var component = this.subject({
+  const component = this.subject({
     width: 100,
     height: 50
   });
 
-  equal(getPaddingBottom(), '50%');
+  assert.equal(getPaddingBottom(), '50%');
 
   run(function() {
     component.setProperties({
@@ -30,5 +29,5 @@ test('it calculates the correct aspect ratio for a given width/height', function
     });
   });
 
-  equal(getPaddingBottom(), '200%');
+  assert.equal(getPaddingBottom(), '200%');
 });

@@ -1,6 +1,6 @@
-<div class="aspect-ratio-image-placeholder" {{bind-attr style=fillStyle}}></div>
-{{#if template}}
+<div class="aspect-ratio-image-placeholder" style={{fillStyle}}></div>
+{{#if hasBlock}}
   {{yield}}
 {{else}}
-  <img {{bind-attr src=src}}>
+  <img src={{src}} class="aspect-ratio-image-img">
 {{/if}}

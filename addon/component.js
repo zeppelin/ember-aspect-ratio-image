@@ -1,6 +1,11 @@
 import Ember from 'ember';
-var Component = Ember.Component;
-var computed = Ember.computed;
+
+const {
+  Component,
+  computed
+} = Ember;
+
+const { htmlSafe } = Ember.String;
 
 export default Component.extend({
   classNames: ['aspect-ratio-image'],
@@ -9,10 +14,10 @@ export default Component.extend({
   height: null,
 
   fillStyle: computed('width', 'height', function() {
-    var width = parseInt(this.get('width'));
-    var height = parseInt(this.get('height'));
+    const width = parseInt(this.get('width'));
+    const height = parseInt(this.get('height'));
 
-    var percent = height / width * 100;
-    return 'padding-bottom: '+percent+'%;';
+    const percent = height / width * 100;
+    return htmlSafe(`padding-bottom: ${percent}%;`);
   })
 });
