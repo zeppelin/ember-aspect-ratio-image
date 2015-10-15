@@ -1,36 +1,25 @@
-# ember-aspect-ratio-image
+# Ember-aspect-ratio-image
 
-An Ember component that maintains the correct aspect ratio for an image, useful in responsive layouts. The addon also provides the bare minimum of [CSS styles](vendor/aspect-ratio-image.css) to get the responsive image working.
-
-Similar to how responsive images are handled on [Medium](https://medium.com/@jonerichall/spectacular-rubens-not-so-spectacular-empire-b577f4f3f0bf#76fb)
+This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
-```
-$ npm install ember-aspect-ratio-image --save-dev
-```
+* `git clone` this repository
+* `npm install`
+* `bower install`
 
-*Note that `0.1.0` requires Ember 1.13.0+. If you're on an older version of Ember, use 0.0.x*
+## Running
 
-## Usage
+* `ember server`
+* Visit your app at http://localhost:4200.
 
-```hbs
-{{aspect-ratio-image width=2000 height=1125 src="http://placekitten.com/2000/1125"}}
-```
+## Running Tests
 
-You can use your own image element (eg. when you want to add class names, etc.), just don't forget the `width`/`height` properties...
+* `ember test`
+* `ember test --server`
 
-```hbs
-{{#aspect-ratio-image width=2000 height=1125}}
-  <img class="aspect-ratio-image-img" src="http://placekitten.com/2000/1125">
-{{/aspect-ratio-image}}
-```
+## Building
 
-You must provide:
-  * `width`
-  * `height`
-  * `src`
+* `ember build`
 
-## License
-
-Copyright (c) 2015 Gabor Babicz ([MIT](LICENSE) License)
+For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
