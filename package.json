@@ -1,7 +1,7 @@
 {
   "name": "ember-aspect-ratio-image",
   "description": "An Ember component that maintains the correct aspect ratio for an image, useful in responsive layouts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "directories": {
     "doc": "doc",
     "test": "tests"
